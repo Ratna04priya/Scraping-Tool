@@ -17,19 +17,25 @@ Guidelines:
 - Add simple authentication to the endpoint using a static token.
 - Add a scraping results caching mechanism using your favourite in-memory DB. If the scraped product price has not changed, we don’t want to update the data of such a product in the DB.
 
-## Project Structure 
+## Project Usage
 
-scraper_tool/                                                                                                                                                                                                    
-├── app/
-│   ├── main.py         # FastAPI entry point                                                                                                                                                                                  .
-│   ├── models.py       # Data models for storage and validation                                                                                                                                                               .
-│   ├── services.py     # Service classes for scraping, caching, storage, and notifications                                                                                                                                    .
-│   ├── settings.py     # Configuration settings                                                                                                                                                                               .
-│   ├── auth.py         # Simple token-based authentication
-│   ├── database.json   # Local JSON storage
-│   └── cache.py        # Caching mechanism with in-memory DB (Redis)
-├── tests/
-│   ├── test_scraping.py
-│   └── test_api.py
-├── requirements.txt    # Dependencies
-└── README.md           # Documentation
+### Clone the repository:
+
+`git clone <repo-url>
+cd scraper_tool`
+
+### Install dependencies:
+
+`pip install -r requirements.txt`
+
+### Start the application:
+
+`uvicorn app.main:app --reload`
+
+### Use the /scrape endpoint with POST:
+
+`{
+  "page_limit": 5,
+  "proxy": "http://your-proxy-server:port"
+}
+`
