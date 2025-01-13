@@ -21,10 +21,10 @@ Guidelines:
 
 scraper_tool/                                                                                                                                                                                                    
 ├── app/
-│   ├── main.py         # FastAPI entry point
-│   ├── models.py       # Data models for storage and validation
-│   ├── services.py     # Service classes for scraping, caching, storage, and notifications
-│   ├── settings.py     # Configuration settings
+│   ├── main.py         # FastAPI entry point                                                                                                                                                                                  .
+│   ├── models.py       # Data models for storage and validation                                                                                                                                                               .
+│   ├── services.py     # Service classes for scraping, caching, storage, and notifications                                                                                                                                    .
+│   ├── settings.py     # Configuration settings                                                                                                                                                                               .
 │   ├── auth.py         # Simple token-based authentication
 │   ├── database.json   # Local JSON storage
 │   └── cache.py        # Caching mechanism with in-memory DB (Redis)
