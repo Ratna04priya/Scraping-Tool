@@ -19,7 +19,7 @@ Guidelines:
 
 ## Project Structure 
 
-scraper_tool/
+scraper_tool/                                                                                                                                                                                                    
 ├── app/
 │   ├── main.py         # FastAPI entry point
 │   ├── models.py       # Data models for storage and validation
