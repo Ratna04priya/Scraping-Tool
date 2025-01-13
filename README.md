@@ -39,3 +39,14 @@ cd scraper_tool`
   "proxy": "http://your-proxy-server:port"
 }
 `
+
+## Running the Application 
+
+1. Start the FastAPI Server:
+   `uvicorn app.main:app --reload`
+2. Make a POST Request to /scrape: Example with cURL:
+`curl -X POST "http://127.0.0.1:8000/scrape?page_limit=5" \
+     -H "Authorization: Bearer my_secure_token"
+`
+3. Health Check: Access `http://127.0.0.1:8000/` in your browser or using a tool like Postman to confirm the service is running.
+
